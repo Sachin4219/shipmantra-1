@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+    --dark-color-a: #667aff;
+    --dark-color-b: #7386ff;
+    --light-color: #e6e9ff;
+    --success-color: #5fd85e;
+    --error-color: #d9534f;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: var(--light-color);
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 5px 15px;
+    background: var(--light-color);
+    color: var(--dark-color-a);
+    border: 0;
+    font-size: 17px;
+}
+.btn:hover{
+    transform: scale(1.005);
+    background: #eeeeee;
+}
+
+/* Main Page */
+
+.container {
+    max-width: 500px;
+    margin: 80px auto;
+    color: #fff;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background: var(--dark-color-a);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.main {
+    padding: 30px 40px;
+    background: var(--dark-color-b);
+}
+
+.main p {
+    margin-bottom: 20px;
+}
+
+.main .form-control {
+    margin-bottom: 20px;
+}
+
+.main label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.main input[type='text'] {
+    font-size: 16px;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+}
+
+.main .btn {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#custom{
+        position: fixed;
+        top: 30px;
+        left: 0;
+        margin-bottom: 50px;
+        width: 100%;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+}
+
+#locationChange {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    background-color:var(--success-color);
+    color: white;
+    padding: 8px 16px;
+    margin: 0;
+}
+
+#enableLocation{
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    background-color: var(--error-color);
+    color: white;
+    padding: 8px 16px;
+    margin: 0;
+}
+
+
+/* @media (max-width: 700px) {
+    .main {
+        display: block;
+    }
+
+    .sidebar {
+        display: none;
+    }
+} */
